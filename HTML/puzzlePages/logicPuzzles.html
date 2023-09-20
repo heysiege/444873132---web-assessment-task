@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddles</title>
+    <link href="/Fonts/fontAwesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styleSheets/main.css">
+    <link rel="stylesheet" href="/styleSheets/puzzlePages.css">
+    <link rel="icon" type="image/x-icon" href="/Images/faviconLogo.png">
+    <script src="/Javascript/javascript.js"></script>
+</head>
+
+<body>
+    <!-- image link to home screen -->
+    <a href="/index.html"><img alt="Otherthinker Logo" src="/Images/logoWhiteBackground.png" class="headerImage"></a>
+
+    <!-- put in the navigation bar -->
+    <div class="navBar" w3-include-html="/HTML/headerAndFooter/navigationBar.html"></div>
+    
+    <!-- rerturn to other puzzle topics -->
+    <a class="puzzlesButton logicPuzzlesButton" href="/HTML/mainPages/puzzles.html"><div><i class="fa-solid fa-arrow-left"></i> See All Puzzles</div></a>
+
+    <!-- heading -->
+    <h2 class="logic">Logic Puzzles</h2>
+    <h3>DOUBLE CLICK ON THE QUESTION TO REVEAL THE ANSWER</h3>
+    <p class="summary">Test your knowledge on these classic trivia topics. Challenge your friends to see how accurately can you answer each question!</p>
+
+    <!-- links to jump to topics -->
+    <h5>jump to...</h5>
+    <div class="topics">
+        <a href="#crossingPuzzles">CROSSING</a>
+        <a href="#lyingAndTruthPuzzles">LYING/TRUTH</a>
+        <a href="#decisionsPuzzles">DECISIONS</a>
+        <a href="#generalPuzzles">GENERAL</a>
+    </div>
+
+    <!-- block for all questions -->
+    <div class="question-container">
+        <!-- river crossing type puzzles section -->
+        <h4 id="crossingPuzzles">Crossing Logic Puzzles</h4>
+        <!-- insert a range of riddles and questions -->
+        <div class="element">
+            <div class="question green">
+                Four people (Alex, Brook, Chris and Dusty) want to cross a river in a boat that can only carry 100kg. Alex weighs 90kg, Brook weighs 80kg, Chris weighs 60kg and Dusty weighs 40kg, and they have 20kg of supplies. How do they get across?
+                <br>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+                One Solution: <br>
+                Chris and Dusty row across (combined 100kg), Dusty returns. Alex rows over, and Chris returns. Chris and Dusty row across again, Dusty returns. Brook rows across with the supplies (combined 100kg), and Chris returns. Chris and Dusty row across again.
+            </div>
+        </div>
+        <div class="element">
+            <div class="question yellow">
+                Four people are crossing a bridge at night, so they all need a torch—but they just have one that only lasts 15 minutes. Alice can cross in one minute, Ben in two minutes, Cindy in five minutes and Don in eight minutes. No more than two people can cross at a time; and when two cross, they have to go at the slower person&apos;s pace. How do they get across in 15 minutes?
+            <br>
+            <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+                Solution: <br>
+                Alice and Ben cross first in two minutes, and Alice crosses back alone with the torch in one minute. Then the two slowest people, Cindy and Don, cross in eight minutes. Ben returns in two minutes, and Alice and Ben return in two minutes. They just made it in 15 minutes exactly.
+            </div>
+        </div>
+
+    <!-- lying vs truth logic puzzle section -->
+        <h4 id="lyingAndTruthPuzzles">Lying VS Truth Logic Puzzles</h4>
+        <!-- insert a range of riddles and questions -->
+        <div class="element">
+            <div class="question green">
+                You&apos;re at a fork in the road in which one direction leads to the City of Lies (where everyone always lies) and the other to the City of Truth (where everyone always tells the truth). There&apos;s a person at the fork who lives in one of the cities, but you&apos;re not sure which one. What question could you ask the person to find out which road leads to the City of Truth?
+                <br>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+                Solution: <br>
+                "Which direction do you live?" Someone from the City of Lies will lie and point to the City of Truth; someone from the City of Truth would tell the truth and also point to the City of Truth.
+            </div>
+        </div>
+        <div class="element">
+            <div class="question yellow">
+                A girl meets a lion and unicorn in the forest. The lion lies every Monday, Tuesday and Wednesday and the other days he speaks the truth. The unicorn lies on Thursdays, Fridays and Saturdays, and the other days of the week he speaks the truth. "Yesterday I was lying," the lion told the girl. "So was I," said the unicorn. What day is it?
+            <br>
+            <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+                Solution: <br>
+                Thursday. The only day they both tell the truth is Sunday; but today can&apos;t be Sunday because the lion also tells the truth on Saturday (yesterday). Going day by day, the only day one of them is lying and one of them is telling the truth with those two statements is Thursday.
+            </div>
+        </div>
+
+    <!-- hard decision logic puzzle section -->
+        <h4 id="decisionsPuzzles">Difficult Decision Logic Puzzles</h4>
+        <!-- insert a range of riddles and questions -->
+        <div class="element">
+            <div class="question green">
+                A bad guy is playing Russian roulette with a six-shooter revolver. He puts in one bullet, spins the chambers and fires at you, but no bullet comes out. He gives you the choice of whether or not he should spin the chambers again before firing a second time. Should he spin again?
+            <br>
+            <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+                Solution: <br>
+                Yes. Before he spins, there&apos;s a one in six chance of a bullet being fired. After he spins, one of those chances has been taken away, leaving a one in five chance and making it more likely a bullet will be fired. Best to spin again.
+            </div>
+        </div>
+        <div class="element">
+            <div class="question yellow">
+                This one could also fall in the lying/truth category. A man is caught on the king&apos;s property. He is brought before the king to be punished. The king says, "You must give me a statement. If it is true, you will be killed by lions. If it is false, you will be killed by trampling of wild buffalo. If I can&apos;t figure it out, I&apos;ll have to let you go." Sure enough, the man was released. What was the man&apos;s statement?
+            <br>
+            <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+                Solution: <br>
+                "I will be killed by trampling of wild buffalo." This stumped the king because if it&apos;s true, he&apos;ll be killed by lions, which would render the statement not true. If it&apos;s a lie, he&apos;d be killed by wild buffalo, which would make it a truth. Since the king had no solution, he had to let the man go.
+            </div>
+        </div>
+
+    <!-- general logic puzzle section -->
+        <h4 id="generalPuzzles">General Logic Puzzles</h4>
+        <!-- insert a range of riddles and questions -->
+        <div class="element">
+            <div class="question green">
+                There is a barrel with no lid and some wine in it. "This barrel of wine is more than half full," says the woman. "No, it&apos;s not," says the man. "It&apos;s less than half full." Without any measuring implements and without removing any wine from the barrel, how can they easily determine who is correct?
+                <br>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+                Solution: <br>
+                Tilt the barrel until the wine barely touches the lip of the barrel. If the bottom of the barrel is visible then it is less than half full. If the barrel bottom is still completely covered by the wine, then it is more than half full.
+            </div>
+        </div>
+        <div class="element">
+            <div class="question yellow">
+                There are three bags, each containing two marbles. Bag A contains two white marbles, Bag B contains two black marbles, and Bag C contains one white marble and one black marble. You pick a random bag and take out one marble, which is white. What is the probability that the remaining marble from the same bag is also white?
+            <br>
+            <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+                Solution: <br>
+                2 out of 3. You know you don&apos;t have Bag B. But because Bag A has two white marbles, you could have picked either marble; if you think of it as four marbles in total from Bags A and C, three white and one black, you&apos;ll have a greater chance of picking another white marble.
+            </div>
+        </div>
+        <div class="element">
+            <div class="question green">
+                A teacher writes six words on a board: "cat dog has max dim tag." She gives three students, Albert, Bernard and Cheryl each a piece of paper with one letter from one of the words. Then she asks, "Albert, do you know the word?" Albert immediately replies yes. She asks, "Bernard, do you know the word?" He thinks for a moment and replies yes. Then she asks Cheryl the same question. She thinks and then replies yes. What is the word?
+            <br>
+            <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+                Solution: <br>
+                Dog. Albert knows right away because he has one of the unique letters that only appear once in all the words: c o h s x i. So, we know the word is not "tag." All of these unique letters appear in different words, except for "h" and "s" in "has," and Bernard can figure out what the word is from the unique letters that are left: t, g, h, s. This eliminates "max" and "dim." Cheryl can then narrow it down the same way. Because there is only one unique letter left, the letter "d," the word must be "dog." (For more on this answer, watch the video below.)
+            </div>
+        </div>
+    </div>
+
+    <!-- button to return to top of page -->
+    <a href="#" class="topButton">Back To Top<i class="fa-solid fa-angle-up"></i></a>
+
+    <!-- put in the footer -->
+    <div w3-include-html="/HTML/headerAndFooter/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script>
+</body>

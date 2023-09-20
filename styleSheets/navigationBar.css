@@ -1,0 +1,244 @@
+/* header image */
+.headerImage {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+/* navigation bar */
+.navigationBar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'MuktaLight';
+    font-size: 20px;
+    padding: 10px 30px;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.navigationBar a:not(.navSubscribeButton) {
+    height: 55px;
+    box-sizing: border-box;
+}
+
+.navigationBar {
+    background-color: #233D4D;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    border: 0px;
+    margin: 0;
+    padding: 0px;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 10px;
+}
+
+.navigationBar div {
+    white-space: nowrap;
+    margin: 0;
+}
+
+.navHome:hover, .navDailyGame:hover, .navPuzzles:hover, .navPrintables:hover, .navBlog:hover, .navAboutThisWebsite:hover{
+    background-color: #4C6270;
+}
+
+.navDailyGame, .navPuzzles, .navPrintables, .navBlog:hover, .navAboutThisWebsite {
+    transition: background-color 0.2s ease;
+}
+
+
+/* puzzles button with dropdown */
+.puzzles {
+    width: 100%;
+}
+
+.navPuzzlesButton a {
+    width: 100%;
+}
+
+.navPuzzlesButton {
+    background-color: #233D4D;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-family: "MuktaLight";
+    height: 55px;
+    transition: background-color 0.2s ease;
+    padding: 0px;
+}
+
+.navPuzzles {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 55px;
+}
+
+.navPuzzlesOptions {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.2);
+    width: 100%;
+    padding: 5px 0px 0px 0px;
+}
+
+.navPuzzlesOptions a {
+    color: black;
+    padding: 7px 26px 7px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: solid white 4px;
+    transition: color 0.3s ease;
+    transition: border-color 0.2s ease;
+}
+
+.navPuzzles:hover .navPuzzlesOptions {
+    display: block;
+}
+
+.navPuzzlesOptions a:hover {
+    color: #FCCA46;
+    border-bottom: solid #FCCA46 4px;
+}
+
+.navPuzzles:hover .navPuzzlesButton {
+    background-color: #4C6270;
+}
+
+.fa-angle-down {
+    margin-left: 3px;
+    font-size: 14px;
+}
+
+/* subscribe button */
+.navSubscribeButton {
+    background-color: #619B8A;
+    padding: 10px 20px;
+    border-radius: 20px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-weight: bold;
+    transition: transform .3s ease-in-out;
+    margin: 0px;
+    box-shadow: rgba(0,0,0,0.2) 0px 2px 5px;
+}
+
+.navSubscribeButton:hover {
+    background-color: #8bc6b4;
+    transform: scale(1.1);
+}
+
+.gap {
+    background-color: #233D4D;
+    height: 20px;
+}
+
+.space {
+    width: 12px;
+}
+
+/* hamburger icon for resizing */
+.hamburgerIcon i {
+    color: white;
+    font-size: 20px;
+}
+
+.hamburgerIcon {
+    background-color: #233D4D;
+    border: none;
+    height: 55px;
+    padding: 0px 30px;
+    display: none;
+}
+
+.hamburgerIcon:hover {
+    cursor: pointer;
+    background-color: #4C6270;
+}
+
+/* responsive resizing */
+@media only screen and (max-width: 950px) {
+    .headerImage {
+        width: 300px;
+    }
+
+    .navigationBar {
+        justify-content: space-between;
+    }
+    
+    .hamburgerIcon {
+        display: block;
+    }
+    
+    .navDailyGame, .navPuzzles, .navPrintables, .navBlog, .navAboutThisWebsite {
+        display: none;
+        transition: 0.2s ease-in-out;
+    }
+
+    .gap {
+        display: none;
+    }
+
+    .navSubscribeButton {
+        right: 30px;
+        position: relative;
+    }    
+
+
+    /* resized styling/layout */
+    .navigationBar.resize {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .navigationBar.resize a:not(.navSubscribeButton), .navigationBar.resize .navPuzzles, .navigationBar.resize .gap {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .navPuzzles.resize {
+        display: block;
+        width: 100%;
+    }
+
+    .navPuzzlesButton {
+        width: 100%;
+    }
+
+    .navPuzzlesOptions.resize {
+        width: 80%;
+        margin: 0% 10%;
+    }
+
+    .navPuzzlesOptions.resize a {
+        padding: 7px 0px;
+    }
+    
+    .navSubscribeButton.resize {
+        right: 0px;
+        bottom: -10px;
+    }
+
+    .gap.resize {
+        display: block;
+    }
+
+    .hamburgerIcon.resize {
+        width: 100%;
+    }
+
+}
+

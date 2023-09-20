@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Game</title>
+    <link href="/Fonts/fontAwesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styleSheets/main.css">
+    <link rel="stylesheet" href="/styleSheets/dailyGame.css">
+    <link rel="icon" type="image/x-icon" href="/Images/faviconLogo.png">
+    <script src="/Javascript/javascript.js"></script>
+</head>
+
+<body>
+    <!-- image link to home screen -->
+    <a href="/index.html"><img alt="Otherthinker Logo" src="/Images/logoWhiteBackground.png" class="headerImage"></a>
+    
+    <!-- put in the nagivation bar -->
+    <div class="navBar" w3-include-html="/HTML/headerAndFooter/navigationBar.html"></div>
+
+    <!-- heading -->
+    <h2 class="emojinateTitle">emojinate!</h2>
+    <h3>A FUN DECODING GAME WITH NEW, DAILY CHALLENGES</h3>
+
+    <!-- emojinate game elements -->
+    <div id="gameContainer" class="gameContainer">
+        <audio id="backgroundMusic">
+            <source src="/Audio/backgroundMusic.mp3" type="audio/mpeg">
+        </audio>
+        <div id="game" class="game">
+            <div class="topElements">
+                <div id="timer"><span id="timerValue">0</span> seconds</div>
+                <div><span id="correctGuessesCounter">0</span> / 5</div>
+            </div>
+            <h5>Guess The Word/Phrase</h5>
+            <div id="emojiDisplay" class="emojiDisplay"></div>
+            <input type="text" class="guessInput" id="guessInput" placeholder="Enter Your Guess..." onkeyup="submitEnter(event)">
+            <p id="resultMessage" class="resultMessage"></p>
+            <button id="submitButton" class="submitButton">SUBMIT</button>
+        </div>
+        <button id="startButton" class="startButton" >Start Game</button>
+
+        <div id="winScreen" class="winScreen">
+            <h5>Good Job!</h5>
+            <p>You guessed all 5 emoji sets correctly in <span id="winTime">0</span> seconds!</p>
+            <p>Come back tomorrow for a new set of emojis to guess</p>
+            <button id="retryButton" class="retryButton" >Retry</button>
+        </div>
+    </div>
+    
+    <!-- instructions for game -->
+    <div class="gameInstructions">
+        <div class="instructions">
+            <h4>How To Play</h4>
+            <ul>
+                <li>Your aim is to correctly guess the word or phrase from a set of emojis.</li>
+                <li>It could be a category, film, book, character, etc.</li>
+                <li>There are 20 new sets of emojis every day for you to guess. You will be tested on 5 at random.</li>
+                <li>You'll be timed to see how long it takes to guess all 5 sets</li>
+                <li>Race with your friends to see who can deduce what the emojis are communicating first</li>
+                <li>Hit SUBMIT to see if your answer is correct and to move on to the next set of emojis</li>
+                <li>If given the message “Almost, you are close!” it means your guess is part of the answer (e.g. photo and photos, hat and top hat)</li>
+                <li>Come back tomorrow for a fresh set of emojis and a new challenge!</li>
+            </ul>
+        </div>
+        <img class="instructionImage" src="/Images/gameImage.png" alt="image of a green, large, question mark">
+    </div>
+
+    <!-- button to return to top of page -->
+    <a href="#" class="topButton">Back To Top<i class="fa-solid fa-angle-up"></i></a>
+
+    <!-- put in the footer -->
+    <div w3-include-html="/HTML/headerAndFooter/footer.html"></div>
+
+    <!-- external javascript for the game function -->
+    <script src="/Javascript/dailyGameJavascript.js"></script>
+
+    <script>
+        includeHTML();
+    </script>
+</body>

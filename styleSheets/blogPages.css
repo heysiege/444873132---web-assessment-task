@@ -1,0 +1,182 @@
+/* coloured active tab */
+.navBlog {
+    background-color: #FCCA46;
+}
+
+/* back to blog button */
+.blogButton {
+    color: black;
+    font-family: "NunitoBold";
+    background-color:#FCCA46;
+    padding: 10px 15px;
+    margin: 30px;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.blogButton:hover {
+    background-color: #233D4D;
+    color: white;
+}
+
+/* styling the blog article section */
+h4 {
+    font-family: "NunitoBold";
+    font-size: 40px;
+    margin: 0px 30px 10px 30px;
+}
+
+.featureImage .largeImage {
+    width: 70%;
+    object-fit: cover;
+    height: 300px;
+    box-sizing: border-box;
+    border: solid white 5px;
+}
+
+.featureImage .smallImage {
+    width: 30%;
+    object-fit: cover;
+    height: 300px;
+    box-sizing: border-box;
+    border: solid white 5px;
+}
+
+.featureImage {
+    display: flex;
+    border-right: solid white 25px;
+    border-left: solid white 25px;
+    margin-bottom: 20px;
+}
+
+.blogPost {
+    margin: 50px 50px 30px;
+}
+
+.blogPost h6 {
+    font-family: "MuktaBold";
+    font-size: 28px;
+    margin: 10px 30px 0px;
+}
+
+.blogPost p, h5 {
+    font-family: "MuktaLight";
+    font-size: 20px;
+    margin: 0px 30px 20px 30px;
+    font-weight: 100;
+    width: 80%
+}
+
+.date {
+    margin: 30px 30px 0px 30px;
+    font-family: "MuktaLight";
+    font-size: 16px;
+    font-style: italic;
+    color:#233D4D
+}
+
+.date span {
+    font-weight: 600;
+    font-family: "MuktaBold";
+}
+
+/* furthur posts styling */
+.morePosts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.keywords {
+    display: none;
+}
+
+.morePostsHeader {
+    text-align: center;
+}
+
+.article {
+    padding: 20px;
+    background-color: #233D4D;
+    border-radius: 15px;
+    width: 40%;
+    margin: 10px;
+    display: flex;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.article:hover {
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    transform:translateY(-2px);
+}
+
+.article img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 50%;
+}
+
+.article .text {
+    color: white;
+}
+
+.article .text h4 {
+    font-family: "NunitoBold";
+    margin: 0px 0px 5px 0px;
+    font-size: 30px;
+}
+
+.article .text p {
+    font-family: "MuktaLight";
+    margin: 0px 0px 25px 0px;
+    font-size: 20px;
+}
+
+.text {
+    margin: 15px;
+}
+
+.readMore {
+    background-color: #FCCA46;
+    color: black;
+    font-family: "NunitoBold";
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.readMore:hover {
+    background-color: #ecd491;
+}
+
+/* responsive resizing */
+@media only screen and (max-width: 950px) {
+    .article {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .article .text p {
+        font-size: 16px;
+    }
+
+    .article .text h4 {
+        font-size: 25px;
+    }
+    
+    .featureImage .smallImage {
+        display: none;
+    }
+
+    .featureImage .largeImage {
+        width: 100%;
+        height: 200px;
+    }
+
+}

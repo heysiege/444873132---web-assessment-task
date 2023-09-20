@@ -1,0 +1,161 @@
+/* coloured active tab */
+.navPuzzles .navPuzzlesButton {
+    background-color: #FCCA46;
+}
+
+/* styling the cards */
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px; 
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.topicBox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 115px;  
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 10px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+}
+
+.topicBox:hover {
+    height: 200px;   
+}
+  
+.boxFront {
+    position: relative;
+    top: -40%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    box-shadow: rgba(0,0,0,0.2) 0px 3px 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #FCCA46;
+    border-radius: 30px;
+    font-family: "NunitoBold";
+    text-align: center;
+    font-size: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.boxFront .break {
+    flex-basis: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+.boxFront i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.boxBack {
+    position: relative;
+    top: -125px;
+    color: #111;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    font-family: "MuktaLight";
+    width: 100%;
+}
+
+.boxBack p {
+    margin: auto;
+    padding: 25px 15px 15px 15px;
+}
+  
+.topicBox:hover .boxBack {
+    margin-top: 30px;
+    visibility: visible;
+    opacity: 1;    
+}
+
+.boxBack a {
+    background-color: #619B8A;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+.boxBack a:hover {
+    transform: scale(1.1);
+    background-color: #233D4D;
+    color: white;
+}
+
+.topicBox:hover .boxFront {
+    height: 200px;
+}
+
+/* styling the positioning */
+.puzzleTopics {
+    display: flex;
+    justify-content: space-between; 
+    margin: 70px 50px 50px 50px;
+    gap: 0px 20px;
+    flex-wrap: wrap;
+}
+
+/* responsive resizing */
+@media only screen and (max-width: 1000px) {
+    .topicBox:hover {
+        height: 220px;   
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .card {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    .puzzleTopics {
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .topicBox:hover .boxFront {
+        top: -23%;
+    }
+    .boxBack {
+        top: -95px;
+    }
+    .boxBack p {
+        padding: 30px 15px 15px 15px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .topicBox:hover {
+        height: 235px;   
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .boxBack {
+        top: -100px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .boxBack p {
+        padding: 20px 15px;
+    }
+}

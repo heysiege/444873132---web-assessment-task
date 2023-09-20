@@ -1,0 +1,220 @@
+/* coloured active tab */
+.navDailyGame {
+    background-color: #FCCA46;
+}
+
+/* how to play instructions */
+h4 {
+    font-family: "NunitoBold";
+    font-size: 40px;
+    display: block;
+    margin: 20px 0px 0px 30px;
+    color: black;
+    line-height: 1;
+}
+
+.instructions li {
+    font-family: "MuktaLight";
+    font-size: 20px;
+    margin: 0px 30px 0px 8px;
+    padding: 0px;
+}
+
+.instructions {
+    width: 60%;
+}
+
+.gameInstructions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gameInstructions img {
+    width: 300px;
+    object-fit: contain;
+    margin: 30px;
+    transition: 0.2s ease;
+}
+
+/* styling the game */
+.gameContainer {
+    margin: 30px;
+    text-align: center;
+    background-color: #FCCA46;
+    padding: 30px;
+    height: 450px;
+}
+
+.game {
+    display: none;
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    padding: 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 20px;
+}
+
+.startButton {
+    height: 100px;
+    margin: auto;
+    margin: 150px 0px;
+    padding: 10px 40px;
+    background-color: #233D4D;
+    border: none;
+    border-radius: 60px;
+    font-size: 45px;
+    font-family: "NunitoBold";
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.startButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #4C6270;
+}
+
+.topElements {
+    display: flex;
+    justify-content: space-between;
+    font-family: "MuktaLight";
+    font-size: 25px;
+}
+
+.game h5 {
+    font-family: "NunitoBold";
+    font-size: 35px;
+    margin: 10px;
+}
+
+.emojiDisplay {
+    font-size: 50px;
+    margin: -10px 0px 20px;
+}
+
+.guessInput {
+    width: 60%;
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 40px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "MuktaLight";
+    border: none;
+    background-color: rgb(215, 215, 215); 
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0px 4px 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.resultMessage {
+    font-family: "MuktaLight";
+    font-size: 17px;
+    margin: 0px;
+}
+
+.submitButton {
+    display: block;
+    width: 60%;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 40px;
+    font-size: 26px;
+    text-align: center;
+    font-family: "MuktaBold";
+    color: white;
+    border: none;
+    background-color: #619B8A; 
+    transition: 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px;
+}
+
+.submitButton:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: #8bc6b4;
+}
+
+.winScreen {
+    display: none;
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    height: 90%;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 20px;
+}
+
+.winScreen p {
+    font-family: "MuktaLight";
+    font-size: 25px;
+    margin: 5px;
+}
+
+.winScreen h5 {
+    font-family: "NunitoBold";
+    font-size: 40px;
+    margin: 10px;
+}
+
+.retryButton {
+    display: block;
+    width: 60%;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 40px;
+    font-size: 26px;
+    text-align: center;
+    font-family: "MuktaBold";
+    color: white;
+    border: none;
+    background-color: #233D4D; 
+    transition: 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
+}
+
+.retryButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #4C6270;
+}
+
+/* responsive resizing */
+@media only screen and (max-width: 820px) {
+    .gameInstructions {
+        flex-wrap: wrap-reverse;
+    }
+
+    .instructions {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .game h5 {
+        font-size: 30px;
+        transition: 0.2s ease-in-out;
+        margin: 10px 0px
+    }
+
+    .guessInput {
+        font-size: 16px;
+    }
+
+    .emojiDisplay {
+        font-size: 40px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .guessInput, .submitButton {
+        width: 80%;
+    }
+
+
+}

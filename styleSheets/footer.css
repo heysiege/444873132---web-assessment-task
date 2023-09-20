@@ -1,0 +1,157 @@
+*  {
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #233D4D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin: 0;
+}
+
+/* column 1 (logo and social media) */
+.column1, .column2, .column3 {
+    width: 30%;
+}
+
+.column1 img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.column1 p {
+    font-size: 35px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.column1 i {
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.column1 i:hover {
+    color: #4C6270;
+    transform: scale(1.1);
+}
+
+/* column 2 (links to sections in website) */
+.column2 {
+    display: flex;
+    align-items: center;
+}
+
+.column2 a {
+    color: white;
+    font-family: "MuktaLight";
+    font-size: 20px;
+    line-height: .7;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.column2 a:hover {
+    color: #4C6270;
+    font-weight: 1000;
+}
+
+.column2 li {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.column2 ul {
+    padding: 0px;
+    margin: 0px;
+    line-height: 2;
+}
+
+/* column 3 (newsletter signup) */
+.column3 {
+    display: block;
+    text-align: center;
+    font-family: "MuktaLight";
+}
+
+.column3 p {
+    color: white;
+    font-family: "MuktaLight";
+    font-size: 16px;
+    margin: 0px 10px 10px 10px;
+}
+
+form {
+    width: 100%;
+}
+
+.column3 .emailAddress {
+    border-radius: 30px;
+    padding: 9px 20px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+
+.column3 button {
+    background-color: #619B8A;
+    padding: 10px 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    border: none;
+    color: white;
+    font-family: "MuktaBold";
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.column3 button:hover {
+    background-color: #8bc6b4;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* copyright section */
+.copyright p {
+    background-color:white;
+    font-family: "MuktaLight";
+    text-align: center;
+    font-size: 14px;
+    margin: 0px;
+}
+
+/* responsive resizing */
+@media only screen and (max-width: 600px) {
+    .footer {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .column1, .column2, .column3 {
+        width: 100%;
+    }
+
+    .column1 img {
+        width: 60%;
+        margin: 0 20% 15px 20%;
+    }
+
+    .column1 p {
+        font-size: 28px;
+    }
+
+    .column2 {
+        margin: 25px 0px;
+    }
+}

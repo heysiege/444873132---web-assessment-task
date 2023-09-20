@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="/Fonts/fontAwesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styleSheets/main.css">
+    <link rel="stylesheet" href="/styleSheets/home.css">
+    <link rel="icon" type="image/x-icon" href="/Images/faviconLogo.png">
+    <script src="/Javascript/javascript.js"></script>
+</head>
+
+<body>
+    <!-- pop up subscription box-->
+    <div class="newsletterPopup" id="newsletterPopup">
+        <button type="button" class="close" onclick="cross()"><i class="fa-regular fa-circle-xmark"></i></button>
+        <p><i class="fa-solid fa-lightbulb"></i></p>
+        <h6>THE SECRET TO SOLVING...</h6>
+        <p>Join The Otherthinkers Today!</p>
+        <form>
+            <input type="email" placeholder="Email Address" id="popupEmail">
+            <span id="valid" class="valid">Please enter a valid email</span>
+            <button type="button" class="popupSubscribe" id="popupSubscribe" onclick="popupSub()">SUBSCRIBE</button>
+        </form>
+    </div>
+
+    <!-- overlay to fade out website -->
+    <div class="backgroundOverlay" id="backgroundOverlay" onclick="cross()"></div>
+
+    <!-- image link to home screen -->
+    <a href="/index.html"><img alt="Otherthinker Logo" src="/Images/logoWhiteBackground.png" class="headerImage"></a>
+        
+    <!-- put in the header -->
+    <div class="navBar" w3-include-html="/HTML/headerAndFooter/navigationBar.html"></div>
+
+    <!-- overview block -->
+    <div class="overview">
+        <div class="overviewImage"><img src="/Images/homePageImage.png" alt="boy thinking, surrounded by puzzle pieces"></div>
+        <div class="overviewText right">
+            <h2 class="right">looking for a challenge?</h2>
+            <h3 class="right">LEVEL UP YOUR PUZZLE GAME</h3>
+            <p>Welcome to Overthinker, your haven for mind-bending puzzles and brain teasers. Immerse yourself in a world where ordinary thinking takes a back seat. Dive into a curated collection of challenges designed to push your intellect to its limits. Whether you're a seasoned solver or a curious newcomer, Overthinker invites you to explore a realm where imagination knows no bounds.</p>
+        </div>
+    </div>
+
+    <!-- subscribe banner -->
+    <div class="subscribeBanner">
+        <p>Want weekly brain puzzles sent straight to your inbox every week?</p>
+        <a href="/HTML/mainPages/newsletter.html" class="subscribeButton">SUBSCRIBE NOW</a>
+    </div>
+
+    <!-- cards and links to puzzle topics/questions -->
+    <div class="puzzleTopics">
+        <div class="box riddlesBox">
+            <div class="background">
+                <h5>RIDDLES</h5>
+            </div>
+            <a href="/HTML/puzzlePages/riddles.html" class="overlay riddlesButton">Let's Go!</a>
+        </div>
+        <div class="box triviaBox">
+            <h5>TRIVIA</h5>
+            <a href="/HTML/puzzlePages/trivia.html" class="overlay triviaButton">Do You Know?</a>
+        </div>
+        <div class="box logicBox">
+            <h5>LOGIC</h5>
+            <a href="/HTML/puzzlePages/logicPuzzles.html" class="overlay logicButton">Test Yourself...</a>
+        </div>
+    </div>
+
+    <div class="emojinateBlock">
+        <div>
+            <h2 class="left">emojinate!</h2>
+            <h3 class="left">CAN YOU BEAT TODAY'S LEVEL?</h3>
+            <p class="left">Challenge your wits and imagination in this fast-paced guessing game. Each day, a fresh set of emojis awaits, forming a unique puzzle that's yours to decipher.  Can you decode what the emojis are communicating? From books, films, categories, characters, and more, how fast can you guess all five sets?</p>
+            <a href="/HTML/mainPages/dailyGame.html" class="playNowButton">PLAY NOW!</a>
+        </div>
+        <img class="emojinateImage" src="/Images/homeEmojinate.png" alt="😀🙃🤔">
+    </div>
+
+    <!-- button to return to top of page -->
+    <a href="#" class="topButton">Back To Top<i class="fa-solid fa-angle-up"></i></a>
+
+    <!-- put in the footer -->
+    <div w3-include-html="/HTML/headerAndFooter/footer.html"></div>
+
+    <script>
+        includeHTML();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigationBar {
+    background-color: #233D4D;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    padding: 15px;
+}

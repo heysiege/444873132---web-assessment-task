@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Sudoku</title>
+    <link href="/Fonts/fontAwesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styleSheets/main.css">
+    <link rel="stylesheet" href="/styleSheets/blogPages.css">
+    <link rel="icon" type="image/x-icon" href="/Images/faviconLogo.png">
+    <script src="/Javascript/javascript.js"></script>
+</head>
+
+<body>
+    <!-- image link to home screen -->
+    <a href="/index.html"><img alt="Otherthinker Logo" src="/Images/logoWhiteBackground.png" class="headerImage"></a>
+
+    <!-- put in the navigation bar -->
+    <div class="navBar" w3-include-html="/HTML/headerAndFooter/navigationBar.html"></div>
+    
+    <!-- blog article block -->
+    <div class="blogPost">
+        <a class="blogButton" href="/HTML/mainPages/blog.html"><i class="fa-solid fa-arrow-left"></i> Back To Blog</a>
+        
+        <div class="date"><span>Published</span> August, 2023</div>
+        <h4>Mastering Sudoku</h4>
+        <h5>Sudoku, the beloved number puzzle, is more than just a pastime; it's a journey into the world of logic and deduction. In this article, we delve into the strategies and techniques that will elevate your Sudoku-solving skills, transforming you into a Sudoku master.</h5>
+        
+        <div class="featureImage">
+            <img class="largeImage" src="/Images/blogMasteringSudoku.jpg" alt="Hand holding a red pencil while solving a sudoku puzzle">
+            <img class="smallImage" src="/Images/blogMasteringSudoku2.avif" alt="Solving sudoku puzzles in a book">
+        </div>
+
+        <!-- blog article text -->
+        <p>Sudoku, the globally adored number puzzle, has captured the hearts and minds of puzzle enthusiasts for decades. Its allure lies in its elegant simplicity, yet beneath the surface, it conceals layers of complexity and strategy waiting to be uncovered. If you're eager to take your Sudoku skills to the next level, read on to explore techniques and tips for mastering this captivating game.</p>
+
+        <h6>The Basics</h6>
+        <p>Sudoku is played on a 9x9 grid, divided into nine 3x3 subgrids, or regions. The objective is to fill in the grid with numbers from 1 to 9, ensuring that each row, column, and region contains all nine digits, with no repetition. The puzzle starts with some numbers pre-filled as clues, guiding your way.</p>
+
+        <h6>1. Start with the Easy Picks</h6>
+        <p>Begin by identifying the obvious placements. Look for rows, columns, or regions with the most filled cells. Then, identify the missing numbers and pencil them in. This helps reveal more clues.</p>
+
+        <h6>2. Use the Process of Elimination</h6>
+        <p>Elimination is a fundamental Sudoku strategy. Examine each row, column, and region to cross off numbers that cannot fit based on the existing numbers.</p>
+
+        <h6>3. Look for Naked and Hidden Singles</h6>
+        <p>A naked single is a cell with only one possible number due to the numbers already present in its row, column, and region. A hidden single is a number that only appears once as a possibility in a row, column, or region.</p>
+
+        <h6>4. Crosshatching and Scanning</h6>
+        <p>Scan rows and columns to identify where a number can go based on the process of elimination. Gradually, this will reveal more numbers to fill in.</p>
+
+        <h6>5. The Power of Pairs and Triples</h6>
+        <p>Identify pairs or triples of numbers within rows, columns, or regions. These groupings can help you eliminate other possibilities.</p>
+
+        <h6>6. X-Wing and Swordfish</h6>
+        <p>As you advance, you'll encounter more complex techniques like X-Wing and Swordfish, which involve spotting patterns in the grid that allow you to eliminate possibilities.</p>
+
+        <h6>7. Trial and Error</h6>
+        <p>When you've exhausted all other strategies, don't be afraid to make educated guesses. Just remember to backtrack if your guess leads to an inconsistency.</p>
+
+        <h6>Practice Makes Perfect</h6>
+        <p>Mastering Sudoku takes time and practice. Start with easy puzzles and gradually work your way up to more challenging ones. Many Sudoku books and apps offer puzzles of varying difficulty levels.</p>
+
+        <h6>Online Communities and Resources</h6>
+        <p>Join Sudoku forums and communities to learn from experts and share strategies. Many websites offer free daily puzzles to practice on.</p>
+
+        <h6>Conclusion</h6>
+        <p>Sudoku is a game of logic, deduction, and perseverance. With practice and these strategies in your arsenal, you'll find yourself mastering even the most challenging Sudoku puzzles. So, pick up that pencil, embrace the grid, and embark on a journey to Sudoku mastery—one number at a time.</p>
+    </div>
+
+    <!-- section for more / further posts -->    
+    <h4 class="morePostsHeader">More Posts...</h4>
+    <div class="morePosts">
+        <div class="article">
+            <img src="/Images/blogPuzzleAppsAndGames.webp" alt="Hand holding a phone, playing a puzzle game">
+            <div class="text">
+                <h4>Puzzle Apps And Games</h4>
+                <p>Discover the latest and greatest puzzle apps for your smartphone or tablet.</p>
+                <a class="readMore" href="/HTML/blogArticles/puzzleAppsAndGames.html">READ MORE...</a>
+                <span class="keywords">application fun challenge</span>
+            </div>
+        </div>
+    
+        <div class="article">
+            <img src="/Images/blogWorldPuzzles.webp" alt="World globe made of wood" class="image">
+            <div class="text">
+                <h4>Puzzles Around The World</h4>
+                <p>Explore unique puzzle challenges and competitions from different cultures.</p>
+                <a class="readMore" href="/HTML/blogArticles/worldPuzzles.html">READ MORE...</a>
+                <span class="keywords">geography globe</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- button to return to top of page -->
+    <a href="#" class="topButton">Back To Top<i class="fa-solid fa-angle-up"></i></a>
+
+    <!-- put in the footer -->
+    <div w3-include-html="/HTML/headerAndFooter/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script>
+</body>

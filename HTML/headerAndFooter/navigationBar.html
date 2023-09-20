@@ -1,0 +1,30 @@
+<head>
+    <!-- specific stylesheet for navigation bar -->
+    <link rel="stylesheet" href="/styleSheets/navigationBar.css">
+</head>
+
+<!-- main navigation with links to pages in the site -->
+<nav class="navigationBar" id="header">
+
+    <!-- hamburger icon that is only shown when the screen is resized (function in javascript.js) -->
+    <button class="hamburgerIcon" id="hamburgerIcon" onclick="openNavLinks()"><i class="fa-solid fa-bars"></i></button>
+
+    <!-- navigation links to pages on the site -->
+    <a href="/HTML/mainPages/dailyGame.html" class="navDailyGame" id="navDailyGame">Daily Game</a>
+    <div class="navPuzzles" id="navPuzzles"> <!-- link/dropdown for puzzles button. dropdown appears on hover, and when clicked it goes to a menu page (suitable for touchscreen devices) -->
+        <button class="navPuzzlesButton"><a href="/HTML/mainPages/puzzles.html" class="puzzles">Puzzles <i class="fa-solid fa-angle-down"></i></a></button>
+        <div class="navPuzzlesOptions" id="navPuzzlesOptions">
+            <a href="/HTML/puzzlePages/riddles.html">Riddles</a>
+            <a href="/HTML/puzzlePages/trivia.html">Trivia</a>
+            <a href="/HTML/puzzlePages/logicPuzzles.html">Logic</a>
+        </div>
+    </div>
+    <a href="/HTML/mainPages/printables.html" class="navPrintables" id="navPrintables">Printables</a>
+    <a href="/HTML/mainPages/blog.html" class="navBlog" id="navBlog">Blog</a>
+    <a href="/HTML/mainPages/aboutThisSite.html" class="navAboutThisWebsite" id="navAboutThisWebsite">About This Site</a>
+    <span class="space"></span>
+    <a href="/HTML/mainPages/newsletter.html" class="navSubscribeButton" id="navSubscribeButton">SUBSCRIBE</a>
+    
+    <!-- space underneath the subscribe button -->
+    <div class="gap" id="gap"></div>
+</nav>

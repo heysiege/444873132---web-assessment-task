@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="/Fonts/fontAwesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styleSheets/main.css">
+    <link rel="stylesheet" href="/styleSheets/blog.css">
+    <link rel="icon" type="image/x-icon" href="/Images/faviconLogo.png">
+    <script src="/Javascript/javascript.js"></script>
+</head>
+
+<body>
+    <!-- image link to home screen -->
+    <a href="/index.html"><img alt="Otherthinker Logo" src="/Images/logoWhiteBackground.png" class="headerImage"></a>
+    
+    <!-- put in the navigation bar -->
+    <div class="navBar" w3-include-html="/HTML/headerAndFooter/navigationBar.html"></div>
+
+    <!-- heading -->
+    <h2>Blog</h2>
+    <h3>EXPLORE THE VAST TOPIC OF PUZZLES</h3>
+
+    <!-- search bar and button that hides irrelevant posts/articles pending on the user's search (function in javascript.js)  -->
+    <div class="searchSection">
+        <input type="text" id="searchBar" onkeyup="pressEnterSearch(event)" placeholder="Search for topics">
+        <button class="searchButton" id="searchButton" onclick="blogSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    
+    <!-- article cards/posts with hidden keywords -->
+    <div class="articleSection">
+        <div class="article">
+            <img src="/Images/blogHistoryOfPuzzles.jpg" alt="Old image of puzzle piece on a worn surface" class="image">
+            <div class="text">
+                <h4>The History Of Puzzles</h4>
+                <p>Explore the origins and evolution of puzzles throughout history.</p>
+                <a class="readMore" href="/HTML/blogArticles/historyOfPuzzles.html">READ MORE...</a>
+                <span class="keywords">past story creation</span> <!-- keywords -->
+            </div>
+        </div>
+    
+        <div class="article">
+            <img src="/Images/blogMasteringSudoku.jpg" alt="Hand holding a red pencil while solving a sudoku puzzle" class="image">
+            <div class="text">
+                <h4>Mastering Sudoku</h4>
+                <p>Tips and strategies for solving Sudoku puzzles of varying difficulty levels.</p>
+                <a class="readMore" href="/HTML/blogArticles/masteringSudoku.html">READ MORE...</a>
+                <span class="keywords">logic numbers learning guide</span> <!-- keywords -->
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="/Images/blogWorldPuzzles.webp" alt="World globe made of wood" class="image">
+            <div class="text">
+                <h4>Puzzles Around The World</h4>
+                <p>Explore unique puzzle challenges and competitions from different cultures.</p>
+                <a class="readMore" href="/HTML/blogArticles/worldPuzzles.html">READ MORE...</a>
+                <span class="keywords">countries global maps geography globe</span> <!-- keywords -->
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="/Images/blogPsychologyOfPuzzles.jpg" alt="Size profile of a head made up of gears">
+            <div class="text">
+                <h4>Psychology Of Puzzles</h4>
+                <p>Delve into the fascinating world of cognitive psychology and the impact of puzzle-solving on the brain.</p>
+                <a class="readMore" href="/HTML/blogArticles/psychologyOfPuzzles.html">READ MORE...</a>
+                <span class="keywords">mental solving logic interest thinking thought processing</span> <!-- keywords -->
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="/Images/blogPuzzleAppsAndGames.webp" alt="Hand holding a phone, playing a puzzle game">
+            <div class="text">
+                <h4>Puzzle Apps And Games</h4>
+                <p>Discover the latest and greatest puzzle apps for your smartphone or tablet.</p>
+                <a class="readMore" href="/HTML/blogArticles/puzzleAppsAndGames.html">READ MORE...</a>
+                <span class="keywords">application fun challenge digital application program website</span> <!-- keywords -->
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="/Images/blogPuzzleDrivenLearning.png" alt="School children solving a puzzle on a classroom table">
+            <div class="text">
+                <h4>Puzzle Driven Learning</h4>
+                <p>How incorporating puzzles into the classroom can boost problem-solving and analytical skills.</p>
+                <a class="readMore" href="/HTML/blogArticles/puzzleDrivenLearning.html">READ MORE...</a>
+                <span class="keywords">school children education interesting developing</span> <!-- keywords -->
+            </div>
+        </div>
+    </div>
+
+    <!-- button to return to top of page -->
+    <a href="#" class="topButton">Back To Top<i class="fa-solid fa-angle-up"></i></a>
+
+    <!-- put in the footer -->
+    <div w3-include-html="/HTML/headerAndFooter/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script>
+</body>

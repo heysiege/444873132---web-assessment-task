@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Page</title>
+    <link href="/Fonts/fontAwesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styleSheets/main.css">
+    <link rel="stylesheet" href="/styleSheets/newsletter.css">
+    <link rel="icon" type="image/x-icon" href="/Images/faviconLogo.png">
+    <script src="/Javascript/javascript.js"></script>
+</head>
+
+<body>
+    <!-- image link to home screen -->
+    <a href="/index.html"><img alt="Otherthinker Logo" src="/Images/logoWhiteBackground.png" class="headerImage"></a>
+    
+    <!-- put in the navigation bar -->
+    <div class="navBar" w3-include-html="/HTML/headerAndFooter/navigationBar.html"></div>
+
+    <!-- heading -->
+    <h2>Newsle<span>t</span>ter</h2>
+    <h3>JOIN OUR COMMUNITY OF PUZZLE-LOVING OVERTHINKERS</h3>
+
+    <!-- completion message, only shown when subscription is completed -->
+    <div class="completeMessage" id="completeMessage">
+        <p>Thanks <span id="name"></span> for signing up! Check your email for a verification link to confirm your subscription.</p>
+    </div>
+
+    <!-- container for newsletter elements -->
+    <div class="mainContainer">
+        <div class="newsletterText">
+            <ul>
+                <li>Weekly newsletter sent straight to your inbox</li>
+                <li>Exclusive new puzzles to solve</li>
+                <li>Tips and tricks for interpreting challenging puzzles</li>
+                <li>Interesting stories about new and upcoming puzzles</li>
+                <li>Monthly giveaways for physical puzzles</li>
+            </ul>
+        </div>
+
+        <!-- user details form for subscription -->
+        <form class="detailsForm" id="detailsForm">
+            <label for="nameInput">Name</label>
+            <input required type="text" placeholder="Your Name" class="nameInput" id="nameInput" onkeyup="pressEnterSubscribe(event)">
+            <br>
+            <label for="emailAddressInput">Email</label>
+            <input required type="email" placeholder="Email address" id="emailAddress" class="emailAddressInput" onkeyup="pressEnterSubscribe(event)">
+            <div class="errorMessage" id="errorMessage"></div>
+            <br>
+            <button onclick="subscribeNewsletter()" type="button" class="newsletterSubscribeButton" id="newsletterSubscribeButton">SUBSCRIBE</button>
+        </form>
+    </div>
+
+    <!-- button to return to top of page -->
+    <a href="#" class="topButton">Back To Top<i class="fa-solid fa-angle-up"></i></a>
+
+    <!-- put in the footer -->
+    <div w3-include-html="/HTML/headerAndFooter/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script>
+</body>

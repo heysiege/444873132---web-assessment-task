@@ -1,0 +1,141 @@
+/* coloured active tab */
+.navBlog {
+    background-color: #FCCA46;
+}
+
+/* showing and hiding elements (keywords and posts) */
+.hide {
+    display: none;
+}
+
+.keywords {
+    display: none;
+}
+
+/* search section layout */
+.searchSection {
+    margin: 20px auto;
+    position:relative;
+    width: 315px;
+}
+
+.searchSection input {
+    border-radius: 30px;
+    border: solid #4C6270 1px;
+    padding: 10px 15px;
+    font-family: "MuktaLight";
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0;
+}
+
+.searchSection input:focus ::placeholder{
+    border: solid #233D4D 2px;
+}
+
+.searchSection input::placeholder {
+    color: #4C6270;
+}
+
+.searchSection .searchButton {
+    background-color: #FCCA46;
+    border: none;
+    padding: 13px 15px;
+    position: absolute;
+    top: 0;
+    margin-left: 10px;;
+    border-radius: 30px;
+    font-size: 25px;
+    color:#233D4D;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.searchSection .searchButton:hover {
+    cursor: pointer;
+    background-color: #619B8A;
+}
+
+/* article styling */
+.article {
+    padding: 20px;
+    background-color: #233D4D;
+    border-radius: 15px;
+    width: 40%;
+    margin: 10px;
+    display: flex;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.article:hover {
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    transform:translateY(-2px);
+}
+
+.article img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 50%;
+}
+
+.article .text {
+    color: white;
+}
+
+.article .text h4 {
+    font-family: "NunitoBold";
+    margin: 0px 0px 5px 0px;
+    font-size: 30px;
+}
+
+.article .text p {
+    font-family: "MuktaLight";
+    margin: 0px 0px 25px 0px;
+    font-size: 20px;
+}
+
+.text {
+    margin: 15px;
+}
+
+.readMore {
+    background-color: #FCCA46;
+    color: black;
+    font-family: "NunitoBold";
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+    text-wrap: nowrap;
+}
+
+.readMore:hover {
+    background-color: #ecd491;
+}
+
+/* layout */
+.articleSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* responsive resizing */
+@media only screen and (max-width: 950px) {
+    .article {
+        width: 70%;
+    }
+}
+
+@media  only screen and (max-width: 750px) {
+    .article .text p {
+        font-size: 16px;
+    }
+
+    .article .text h4 {
+        font-size: 25px;
+    }
+}

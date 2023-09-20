@@ -1,0 +1,365 @@
+/* background overlay to decrease opacity */
+.backgroundOverlay {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9998;
+    transition: 0.2s ease-in-out;
+}
+
+/* styling for the pop up subscribe box */
+.newsletterPopup {
+    background-color: #FCCA46;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    right: 25%;
+    left: 25%;
+    top: 30%;
+    z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
+    transition: 0.2s ease-in-out;
+    border-radius: 30px;
+}
+
+.newsletterPopup .fa-circle-xmark {
+    color: white;
+    font-size: 32px;
+    transition: 0.2s ease-in-out;
+}
+
+.newsletterPopup .close {
+    background-color: #FCCA46;
+    border: none;
+    float: right;
+}
+
+.newsletterPopup .fa-circle-xmark:hover {
+    cursor: pointer;
+    color: #233D4D;
+}
+
+.newsletterPopup h6 {
+    font-family: "MuktaLight";
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 0px 10px;
+    line-height: 1;
+}
+
+.newsletterPopup .fa-lightbulb {
+    font-size: 100px;
+    color: white;
+    margin: auto;
+    padding-left: 32px;
+}
+
+.newsletterPopup p {
+    font-family: "Nunitobold";
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #233D4D;
+    margin: 10px;
+    text-align: center;
+}
+
+/* pop up subscribe form */
+.newsletterPopup form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsletterPopup input {
+    width: 80%;
+    padding: 15px;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    margin: 10px 10px 5px;
+    font-size: 15px;
+}
+
+.newsletterPopup .popupSubscribe {
+    width: 80%;
+    padding: 15px;
+    border: none;
+    background-color: #233D4D;
+    color: white;
+    font-family: "NunitoBold";
+    border-radius: 30px;
+    text-align: center;
+    margin: 0px 10px 10px;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.newsletterPopup .popupSubscribe:hover {
+    cursor: pointer;
+    background-color: #4C6270;
+    transform: scale(1.05);
+}
+
+.valid {
+    font-family: "MuktaLight";
+    color: white;
+    font-size: 17px;
+    display: none;
+    margin-bottom: 5px;
+}
+
+/* overview block */
+.overview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview h2 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.overviewText p {
+    font-family: "MuktaLight";
+    font-size: 21px;
+    margin: 0px 30px 30px;
+}
+
+.overviewImage img {
+    width: 400px;
+    margin: 30px;
+}
+
+/* subscribe banner */
+.subscribeBanner {
+    background-color: #619B8A;
+    color: white;
+    font-family: "NunitoMedium";
+    font-size: 25px;
+    display: flex;
+    padding: 20px 70px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.subscribeBanner p {
+    margin: 0;
+    text-align: left;
+}
+
+.subscribeButton {
+    background-color: #233D4D;
+    padding: 10px 25px;
+    border-radius: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-weight: bold;
+    white-space: nowrap;
+    margin-left: 25px;
+    transition: .3s ease;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 12px;
+}
+
+.subscribeButton:hover {
+    background-color: #4C6270;
+    transform: scale(1.1);
+}
+
+.subscribeButton {
+    text-decoration: none;
+    color: white;
+    font-family: "MuktaBold";
+    font-size: 24px;
+}
+
+/* puzzle options */
+.puzzleTopics {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 60px 30px;
+}
+
+.puzzleTopics h5 {
+    font-family: "MuktaBold";
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.puzzleTopics a {
+    font-family: "MuktaLight";
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.background {
+    display: block;
+}
+
+.box {
+    position: relative;
+    width: 30%;
+    background-color: #233D4D;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    background-color: #FCCA46;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
+}
+
+.riddlesBox:hover .riddlesButton {
+    bottom: 0;
+    height: 100%;
+}
+
+.triviaBox:hover .triviaButton {
+    bottom: 0;
+    height: 100%;
+}
+
+.logicBox:hover .logicButton {
+    bottom: 0;
+    height: 100%;
+}
+
+/* emojinate block */
+.left {
+    text-align: left;
+}
+
+.emojinateBlock {
+    display: flex;
+}
+
+.emojinateBlock p {
+    font-family: "MuktaLight";
+    font-size: 21px;
+    margin: 0px 30px 30px 30px;
+}
+
+.emojinateImage {
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+}
+
+.playNowButton {
+    background-color: #233D4D;
+    padding: 10px 25px;
+    border-radius: 40px;
+    text-align: center;
+    margin: 0px 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-weight: bold;
+    white-space: nowrap;
+    height: 70px;
+    width: 240px;
+    transition: .3s ease;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 10px;
+    text-decoration: none;
+    color: white;
+    font-family: "MuktaBold";
+    font-size: 24px;
+}
+
+.playNowButton:hover {
+    background-color: #4C6270;
+    transform: scale(1.1);
+}
+
+/* responsive resizing */
+@media only screen and (max-width: 1060px) {
+    .overview h2, .emojinateBlock h2 {
+        font-size: 70px;
+    }
+    
+    .overviewImage {
+        transition: 0.2s ease;
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .emojinateImage, .overviewImage img {
+        margin: 0px auto;
+    }
+
+    .emojinateBlock h2 {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .left, .right {
+        text-align: center;
+    }
+
+    .overview {
+        display: block;
+    }
+
+    .overviewImage img {
+        width: 90%;
+    }
+    
+    .overviewImage {
+        padding-left: 40px;
+        padding-top: 30px;
+        margin: 0px auto;
+    }
+
+    .playNowButton {
+        margin: 30px auto;
+    }
+
+    .emojinateBlock {
+        flex-wrap: wrap-reverse;
+    }
+
+    .overview h2, .emojinateBlock h2 {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .subscribeBanner p {
+        width: 80%;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .subscribeBanner {
+        display: block;
+    }
+
+    .subscribeButton {
+        margin: 10px 0px auto;
+    }
+
+    .newsletterPopup {
+        width: 80%;
+        right: 10%;
+        left: 10%;
+    }
+}
