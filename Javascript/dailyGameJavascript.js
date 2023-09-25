@@ -19,7 +19,17 @@ const emojiSets = [
     {emojis: "🤧😷💉", answer: "covid"},
     {emojis: "🎨🖼️✏️", answer: "art"},
     {emojis: "🦗🐜🦋", answer: "insects"},
-    {emojis: "⚽🏀🎾", answer: "sports"}
+    {emojis: "⚽🏀🎾", answer: "sports"},
+    {emojis: "🏠🏡🏢", answer: "buildings"},
+    {emojis: "🚀☄️🪐", answer: "space"},
+    {emojis: "🏖️🩴🌊", answer: "beach"},
+    {emojis: "🎃👻🕷️", answer: "halloween"},
+    {emojis: "🎄🎅🤶", answer: "christmas"},
+    {emojis: "👨‍🍳🍳🔪", answer: "cooking"},
+    {emojis: "🦖🦕🌋", answer: "dinosaurs"},
+    {emojis: "🧛🦇🌕", answer: "vampire"},
+    {emojis: "🍻🍺🍷", answer: "drinks"},
+    {emojis: "🔨🔧🪛", answer: "tools"}
 ];
 
 let currentEmojiSetIndex = -1; 
