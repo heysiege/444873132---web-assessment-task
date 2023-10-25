@@ -39,8 +39,6 @@
 
 .navHome:hover, .navDailyGame:hover, .navPrintables:hover, .navBlog:hover, .navAboutThisWebsite:hover{
     background-color: #4C6270;
-    height: 55px;
-    padding-top: 11px;
 }
 
 .navPuzzles:hover {
