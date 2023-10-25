@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter Page</title>
-    <link href="/Fonts/fontAwesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="/styleSheets/main.css">
-    <link rel="stylesheet" href="/styleSheets/newsletter.css">
-    <link rel="icon" type="image/x-icon" href="/Images/faviconLogo.png">
-    <script src="/Javascript/javascript.js"></script>
+    <link href="Fonts/fontAwesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleSheets/main.css">
+    <link rel="stylesheet" href="styleSheets/newsletter.css">
+    <link rel="icon" type="image/x-icon" href="Images/faviconLogo.png">
+    <script src="Javascript/javascript.js"></script>
 </head>
 
 <body>
     <!-- image link to home screen -->
-    <a href="/index.html"><img alt="Otherthinker Logo" src="/Images/logoWhiteBackground.png" class="headerImage"></a>
+    <a href="index.html"><img alt="Otherthinker Logo" src="Images/logoWhiteBackground.png" class="headerImage"></a>
     
     <!-- put in the navigation bar -->
-    <div class="navBar" w3-include-html="/HTML/headerAndFooter/navigationBar.html"></div>
+    <div class="navBar" w3-include-html="HTML/headerAndFooter/navigationBar.html"></div>
 
     <!-- heading -->
     <h2>Newsle<span>t</span>ter</h2>
@@ -41,13 +41,19 @@
 
         <!-- user details form for subscription -->
         <form class="detailsForm" id="detailsForm">
+            <!-- for user's name -->
             <label for="nameInput">Name</label>
             <input required type="text" placeholder="Your Name" class="nameInput" id="nameInput" onkeyup="pressEnterSubscribe(event)">
+
             <br>
+
+            <!-- for user's email address -->
             <label for="emailAddressInput">Email</label>
             <input required type="email" placeholder="Email address" id="emailAddress" class="emailAddressInput" onkeyup="pressEnterSubscribe(event)">
             <div class="errorMessage" id="errorMessage"></div>
+
             <br>
+            <!-- submit button -->
             <button onclick="subscribeNewsletter()" type="button" class="newsletterSubscribeButton" id="newsletterSubscribeButton">SUBSCRIBE</button>
         </form>
     </div>
@@ -56,7 +62,7 @@
     <a href="#" class="topButton">Back To Top<i class="fa-solid fa-angle-up"></i></a>
 
     <!-- put in the footer -->
-    <div w3-include-html="/HTML/headerAndFooter/footer.html"></div>
+    <div w3-include-html="HTML/headerAndFooter/footer.html"></div>
 
     <script>
         includeHTML();

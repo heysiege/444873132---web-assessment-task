@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Game</title>
-    <link href="/Fonts/fontAwesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="/styleSheets/main.css">
-    <link rel="stylesheet" href="/styleSheets/dailyGame.css">
-    <link rel="icon" type="image/x-icon" href="/Images/faviconLogo.png">
-    <script src="/Javascript/javascript.js"></script>
+    <link href="Fonts/fontAwesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleSheets/main.css">
+    <link rel="stylesheet" href="styleSheets/dailyGame.css">
+    <link rel="icon" type="image/x-icon" href="Images/faviconLogo.png">
+    <script src="Javascript/javascript.js"></script>
 </head>
 
 <body>
     <!-- image link to home screen -->
-    <a href="/index.html"><img alt="Otherthinker Logo" src="/Images/logoWhiteBackground.png" class="headerImage"></a>
+    <a href="index.html"><img alt="Otherthinker Logo" src="Images/logoWhiteBackground.png" class="headerImage"></a>
     
     <!-- put in the nagivation bar -->
     <div class="navBar" w3-include-html="/HTML/headerAndFooter/navigationBar.html"></div>
@@ -25,21 +25,31 @@
     <!-- emojinate game elements -->
     <div id="gameContainer" class="gameContainer">
         <audio id="backgroundMusic">
-            <source src="/Audio/backgroundMusic.mp3" type="audio/mpeg">
+            <source src="Audio/backgroundMusic.mp3" type="audio/mpeg">
         </audio>
         <div id="game" class="game">
             <div class="topElements">
+                <!-- stopwatch timer -->
                 <div id="timer"><span id="timerValue">0</span> seconds</div>
+
+                <!-- guess counter -->
                 <div><span id="correctGuessesCounter">0</span> / 5</div>
             </div>
             <h5>Guess The Word/Phrase</h5>
+            <!-- showing the emojis -->
             <div id="emojiDisplay" class="emojiDisplay"></div>
+
+            <!-- for user's input -->
             <input type="text" class="guessInput" id="guessInput" placeholder="Enter Your Guess..." onkeyup="submitEnter(event)">
+
+            <!-- result message (shows if guess is incorrect or close) -->
             <p id="resultMessage" class="resultMessage"></p>
+
             <button id="submitButton" class="submitButton">SUBMIT</button>
         </div>
         <button id="startButton" class="startButton" >Start Game</button>
 
+        <!-- ending screen -->
         <div id="winScreen" class="winScreen">
             <h5>Good Job!</h5>
             <p>You guessed all 5 emoji sets correctly in <span id="winTime">0</span> seconds!</p>
@@ -63,17 +73,17 @@
                 <li>Come back tomorrow for a fresh set of emojis and a new challenge!</li>
             </ul>
         </div>
-        <img class="instructionImage" src="/Images/gameImage.png" alt="image of a green, large, question mark">
+        <img class="instructionImage" src="Images/gameImage.png" alt="image of a green, large, question mark">
     </div>
 
     <!-- button to return to top of page -->
     <a href="#" class="topButton">Back To Top<i class="fa-solid fa-angle-up"></i></a>
 
     <!-- put in the footer -->
-    <div w3-include-html="/HTML/headerAndFooter/footer.html"></div>
+    <div w3-include-html="HTML/headerAndFooter/footer.html"></div>
 
     <!-- external javascript for the game function -->
-    <script src="/Javascript/dailyGameJavascript.js"></script>
+    <script src="Javascript/dailyGameJavascript.js"></script>
 
     <script>
         includeHTML();
