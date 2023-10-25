@@ -1,7 +1,3 @@
-*  {
-    box-sizing: border-box;
-}
-
 .footer {
     background-color: #233D4D;
     display: flex;
@@ -96,6 +92,7 @@ form {
     text-align: center;
     height: 50px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .column3 button {

@@ -1,6 +1,7 @@
 /* coloured active tab */
 .navPuzzles .navPuzzlesButton {
     background-color: #FCCA46;
+    height: 55px;
 }
 
 /* headings and text */

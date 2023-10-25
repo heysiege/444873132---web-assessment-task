@@ -7,6 +7,7 @@
     <link href="../Fonts/fontAwesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="../styleSheets/main.css">
     <link rel="stylesheet" href="../styleSheets/puzzlePages.css">
+    <link rel="stylesheet" href="../styleSheets/navigationBar.css">
     <link rel="icon" type="image/x-icon" href="../Images/faviconLogo.png">
     <script src="../Javascript/javascript.js"></script>
 </head>
@@ -15,8 +16,31 @@
     <!-- image link to home screen -->
     <a href="../HTML/index.html"><img alt="Otherthinker Logo" src="../Images/logoWhiteBackground.png" class="headerImage"></a>
 
-    <!-- put in the navigation bar -->
-    <div class="navBar" w3-include-html="../HTML/navigationBar.html"></div>
+    <!-- main navigation with links to pages in the site -->
+    <nav class="navigationBar" id="header">
+
+        <!-- hamburger icon that is only shown when the screen is resized (function in javascript.js) -->
+        <button class="hamburgerIcon" id="hamburgerIcon" onclick="openNavLinks()"><i class="fa-solid fa-bars"></i></button>
+
+        <!-- navigation links to pages on the site -->
+        <a href="../HTML/dailyGame.html" class="navDailyGame" id="navDailyGame">Daily Game</a>
+        <div class="navPuzzles" id="navPuzzles"> <!-- link/dropdown for puzzles button. dropdown appears on hover, and when clicked it goes to a menu page (suitable for touchscreen devices) -->
+            <button class="navPuzzlesButton"><a href="../HTML/puzzles.html" class="puzzles">Puzzles <i class="fa-solid fa-angle-down"></i></a></button>
+            <div class="navPuzzlesOptions" id="navPuzzlesOptions">
+                <a href="../HTML/riddles.html">Riddles</a>
+                <a href="../HTML/trivia.html">Trivia</a>
+                <a href="../HTML/logicPuzzles.html">Logic</a>
+            </div>
+        </div>
+        <a href="../HTML/printables.html" class="navPrintables" id="navPrintables">Printables</a>
+        <a href="../HTML/blog.html" class="navBlog" id="navBlog">Blog</a>
+        <a href="../HTML/aboutThisSite.html" class="navAboutThisWebsite" id="navAboutThisWebsite">About This Site</a>
+        <span class="space"></span>
+        <a href="../HTML/newsletter.html" class="navSubscribeButton" id="navSubscribeButton">SUBSCRIBE</a>
+        
+        <!-- space underneath the subscribe button -->
+        <div class="gap" id="gap"></div>
+    </nav>
 
     <!-- rerturn to other puzzle topics -->
     <a class="puzzlesButton" href="../HTML/puzzles.html"><div><i class="fa-solid fa-arrow-left"></i> See All Puzzles</div></a>
@@ -190,10 +214,47 @@
     <!-- button to return to top of page -->
     <a href="#" class="topButton">Back To Top<i class="fa-solid fa-angle-up"></i></a>
 
-    <!-- put in the footer -->
-    <div w3-include-html="../HTML/footer.html"></div>
+    <!-- footer for page, split into three columns (that combine on smaller screens) -->
+    <div class="footer">
 
-    <script>
-        includeHTML();
-    </script>
+        <!-- links to get to home page and social media -->
+        <div class="column1">
+            <a href="../HTML/index.html"><img src="../Images/logoDarkBackground.png" alt="Otherthinker Logo"></a>
+            <div class="socialMedia">
+                <p>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>    
+                    <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>  
+                </p>      
+            </div>
+        </div>
+
+        <!-- links to navigate the site -->
+        <div class="column2">
+            <li>
+                <ul><a href="../HTML/dailyGame.html">Daily Game</a></ul>
+                <ul><a href="../HTML/puzzles.html">Puzzles</a></ul>
+                <ul><a href="../HTML/printables.html">Printables</a></ul>
+                <ul><a href="../HTML/blog.html">Blog</a></ul>
+                <ul><a href="../HTML/aboutThisSite.html">About This Site</a></ul>
+            </li>
+        </div>
+
+        <!-- newsletter signup for users to enter their details -->
+        <div class="column3">
+            <p>Sign up to receive weekly puzzles and challenge your brain!</p>
+            <form>
+                <input type="email" placeholder="Email address" id="emailAddress" class="emailAddress">
+                <br>
+                <button class="newsletterSubscribeButton" id="newsletterSubscribeButton">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- "copyright" section + name -->
+    <div class="copyright">
+        <p>Copyright © 2023 Caitlin Chung</p>
+    </div>
+
 </body>
+</html>
