@@ -83,6 +83,7 @@
     text-align: center;
     margin: 10px 10px 5px;
     font-size: 15px;
+    box-sizing: border-box;
 }
 
 .newsletterPopup .popupSubscribe {
