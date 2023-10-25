@@ -1,19 +1,19 @@
 /* fonts */
 @font-face {
     font-family: "NunitoBold";
-    src: url(/Fonts/Nunito/static/Nunito-Black.ttf);
+    src: url(../Fonts/Nunito/static/Nunito-Black.ttf);
 }
 @font-face {
     font-family: "NunitoMedium";
-    src: url(/Fonts/Nunito/static/Nunito-Medium.ttf);
+    src: url(../Fonts/Nunito/static/Nunito-Medium.ttf);
 }
 @font-face {
     font-family: "MuktaBold";
-    src: url(/Fonts/Mukta/Mukta-Bold.ttf);
+    src: url(../Fonts/Mukta/Mukta-Bold.ttf);
 }
 @font-face {
     font-family: "MuktaLight";
-    src: url(/Fonts/Mukta/Mukta-Light.ttf);
+    src: url(../Fonts/Mukta/Mukta-Light.ttf);
 }
 
 /* sticky header */

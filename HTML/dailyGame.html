@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Game</title>
-    <link href="Fonts/fontAwesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="styleSheets/main.css">
-    <link rel="stylesheet" href="styleSheets/dailyGame.css">
-    <link rel="icon" type="image/x-icon" href="Images/faviconLogo.png">
-    <script src="Javascript/javascript.js"></script>
+    <link href="../Fonts/fontAwesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styleSheets/main.css">
+    <link rel="stylesheet" href="../styleSheets/dailyGame.css">
+    <link rel="icon" type="image/x-icon" href="../Images/faviconLogo.png">
+    <script src="../Javascript/javascript.js"></script>
 </head>
 
 <body>
     <!-- image link to home screen -->
-    <a href="index.html"><img alt="Otherthinker Logo" src="Images/logoWhiteBackground.png" class="headerImage"></a>
+    <a href="../HTML/index.html"><img alt="Otherthinker Logo" src="../Images/logoWhiteBackground.png" class="headerImage"></a>
     
     <!-- put in the nagivation bar -->
-    <div class="navBar" w3-include-html="/HTML/headerAndFooter/navigationBar.html"></div>
+    <div class="navBar" w3-include-html="../HTML/navigationBar.html"></div>
 
     <!-- heading -->
     <h2 class="emojinateTitle">emojinate!</h2>
@@ -25,7 +25,7 @@
     <!-- emojinate game elements -->
     <div id="gameContainer" class="gameContainer">
         <audio id="backgroundMusic">
-            <source src="Audio/backgroundMusic.mp3" type="audio/mpeg">
+            <source src="../Audio/backgroundMusic.mp3" type="audio/mpeg">
         </audio>
         <div id="game" class="game">
             <div class="topElements">
@@ -73,17 +73,17 @@
                 <li>Come back tomorrow for a fresh set of emojis and a new challenge!</li>
             </ul>
         </div>
-        <img class="instructionImage" src="Images/gameImage.png" alt="image of a green, large, question mark">
+        <img class="instructionImage" src="../Images/gameImage.png" alt="image of a green, large, question mark">
     </div>
 
     <!-- button to return to top of page -->
     <a href="#" class="topButton">Back To Top<i class="fa-solid fa-angle-up"></i></a>
 
     <!-- put in the footer -->
-    <div w3-include-html="HTML/headerAndFooter/footer.html"></div>
+    <div w3-include-html="../HTML/footer.html"></div>
 
     <!-- external javascript for the game function -->
-    <script src="Javascript/dailyGameJavascript.js"></script>
+    <script src="../Javascript/dailyGameJavascript.js"></script>
 
     <script>
         includeHTML();
